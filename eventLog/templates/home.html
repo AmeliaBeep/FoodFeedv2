@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>EventLog</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Date & Time</th>
+                <th>Event Details</th>
+            </tr>
+        {%-for row in eventsList-%}
+            <tr>
+                <td>{{row.date}}</td>
+                <td>{{row.event}}</td>
+            </tr>
+        {%-endfor-%}
+        </table>
+        <hr/>
+        <form method="post">
+            <title>Add event</title>
+            <label for="eventBox">Event Description</label>
+            <input name="eventBox" id="eventBox" required/>
+            <input type="submit" value = "Add">
+        </form>
+    </body>
+</html>
