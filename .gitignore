@@ -1,2 +1,5 @@
 requirements.txt
 .venv/
+
+__pycache__/
+instance/
